@@ -10,7 +10,7 @@ public class SegundoExercicio
 	
 	public static void main( String[] args )
 	{
-		showDialogPassword( "A senha precisa ter no mínimo 6 caracteres" );	
+		showDialogPassword( "A senha precisa ter no mÃ­nimo 6 caracteres" );	
 	}
 	
 	public static void showDialogPassword(String title_dialog)
@@ -28,7 +28,7 @@ public class SegundoExercicio
 		       	
 				if ( IsSafePassword( password_input ) )
 				{
-					JOptionPane.showMessageDialog( null, "Senha é forte" );
+					JOptionPane.showMessageDialog( null, "Senha Ã© forte" );
 					JOptionPane.showMessageDialog( null, "sua senha foi criado com sucesso!" );
 					close_dialog = true;
 				}
@@ -36,7 +36,7 @@ public class SegundoExercicio
 				{
 					if( password_input.length() == 0 )
 					{
-						JOptionPane.showMessageDialog( null, "Opps! a senha precisa ter no mínimo 6 caracteres." );
+						JOptionPane.showMessageDialog( null, "Opps! a senha precisa ter no mÃ­nimo 6 caracteres." );
 						showDialogPassword( "A senha precisar ter 6 ou mais caracteres " );
 					}
 					else if( password_input.length() < 6 )
@@ -48,22 +48,22 @@ public class SegundoExercicio
 							chars += "s";
 						}
 						
-						JOptionPane.showMessageDialog( null, "Sua senha é fraca! adicione mais "+( 6 - password_input.length() )+( chars ) );
+						JOptionPane.showMessageDialog( null, "Sua senha Ã© fraca! adicione mais "+( 6 - password_input.length() )+( chars ) );
 						showDialogPassword( "A senha precisar ter 6 ou mais caracteres " );
 					}
 					else
 					{
 						if( IsSafePassword( password_input ) )
 						{
-							JOptionPane.showMessageDialog( null, "Senha é forte" );
+							JOptionPane.showMessageDialog( null, "Senha Ã© forte" );
 							JOptionPane.showMessageDialog( null, "sua senha foi criado com sucesso!" );
 						}else
 						{
-							JOptionPane.showMessageDialog( null,"A senha tem mais de 6 caracteres porém ainda é fraca, a senha deve possuir:\n"
-									+ "no mínimo 1 digito.\n"
-									+ "no mínimo 1 letra em minúsculo.\n"
-									+ "no mínimo 1 letra em maiúsculo.\n"
-									+ "no mínimo 1 caractere especial dentre estes : !@#$%^&*()-+ ");
+							JOptionPane.showMessageDialog( null,"A senha tem mais de 6 caracteres porÃ©m ainda Ã© fraca, a senha deve possuir:\n"
+									+ "no mÃ­nimo 1 digito.\n"
+									+ "no mÃ­nimo 1 letra em minÃºsculo.\n"
+									+ "no mÃ­nimo 1 letra em maiÃºsculo.\n"
+									+ "no mÃ­nimo 1 caractere especial dentre estes : !@#$%^&*()-+ ");
 						}
 					}
 				}
@@ -72,17 +72,17 @@ public class SegundoExercicio
 		    	{
 		    		if( !IsSafePassword( password_input ) )
 		    		{
-		    			showDialogPassword("A senha precisa ter no mínimo 6 caracteres");
+		    			showDialogPassword("A senha precisa ter no mÃ­nimo 6 caracteres");
 		    		}
-				}
+			}
 		    }
 		}
 	}
 	
    /**
-    * método que checa se a senha é segura
-    * fazendo um match verificando atráves de um regex pré setado.
-    * @param password com a string da senha digitada pelo usuário.
+    * mÃ©todo que checa se a senha Ã© segura
+    * fazendo um match verificando atrÃ¡ves de um regex prÃ© setado.
+    * @param password com a string da senha digitada pelo usuÃ¡rio.
     * @return boolean safe_password.find();
     */
 	public static boolean IsSafePassword( String password )
