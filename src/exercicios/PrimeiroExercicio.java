@@ -6,7 +6,7 @@ public class PrimeiroExercicio
 	public static void main( String args[ ])
 	{
 		int n = 16;
-        makeStair( n );
+        	makeStair( n );
 	}
 	    
     /**
