@@ -1,6 +1,5 @@
 package exercicios;
 
-
 public class PrimeiroExercicio
 {
 	
@@ -11,7 +10,7 @@ public class PrimeiroExercicio
 	}
 	    
     /**
-    * método que recebe qualquer um número inteiro e retorna
+    * mÃ©todo que recebe qualquer um nÃºmero inteiro e retorna
     * quantidade de caractere(s) para criar o degrau da escada.
     * @param char_quantites quantidade de caracteres.
     * @param step_total quantidade de degrau(s).
@@ -29,21 +28,21 @@ public class PrimeiroExercicio
         step = String.format( "%" + String.valueOf( step_total ) + "s", step ); //alinhando texto a direita
         
         if( char_quantites < step_total ) {
-        	step += "\n"; //pulando linha até a base da escada;
+        	step += "\n"; //pulando linha atÃ© a base da escada;
         }
         
         return step;
     }
     
     /**
-    * Método que recebe um número inteiro e 
-    * faz um prinln da função makeStepChar()
+    * MÃ©todo que recebe um nÃºmero inteiro e 
+    * faz um prinln da funÃ§Ã£o makeStepChar()
     * dentro de um for loop com total de degraus
     * @param step_total total de degraus.
     */
     public static void makeStair( int step_total )
     {
-		for( int i= 1; i <= step_total; i++ )
+	for( int i= 1; i <= step_total; i++ )
         {
            System.out.print( makeStepChar( i, step_total ) );
         }
