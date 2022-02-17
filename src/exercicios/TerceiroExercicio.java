@@ -2,7 +2,6 @@ package exercicios;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import javax.swing.JOptionPane;
 
 class TerceiroExercicio {
@@ -56,7 +55,7 @@ class TerceiroExercicio {
 		}
 		 
 		System.out.println( "Essa palavra tem o total de " + pars_anagram_list.size() + text_anagram );
-		System.out.print( "A lista de todos os anagramas pares s„o: ");
+		System.out.print( "A lista de todos os anagramas pares s√£o: ");
 		 
 		for( int anagram = 0; anagram < pars_anagram_list.size(); anagram++ )
 		{
@@ -65,14 +64,14 @@ class TerceiroExercicio {
 	}
 		
 	/**
-    * mÈtodo que checam se duas palavras s„o anagrama uma da outra
-    * as palavras precisam ser do mesmo tamanho e n„o nulas
+    * m√©todo que checam se duas palavras s√£o anagrama uma da outra
+    * as palavras precisam ser do mesmo tamanho e n√£o nulas
     * para continuar o algoritimo
-    * setando caixa baixa as palavras para comparaÁ„o perfeita
-    * ordenaÁ„o das palavras para garantir a igualdade se houver
+    * setando caixa baixa as palavras para compara√ß√£o perfeita
+    * ordena√ß√£o das palavras para garantir a igualdade se houver
     * @param sub_str_1 palavra a ser comparada
     * @param sub_str_2 outra palavra a ser comparada
-    * @return boolean validaÁ„o de para um anagrama 
+    * @return boolean valida√ß√£o de para um anagrama 
     */
 	public static boolean isAnagram( String sub_str_1, String sub_str_2 )
 	{
